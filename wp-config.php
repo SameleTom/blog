@@ -32,7 +32,7 @@
     define('DB_HOST', 'localhost');
     
     /** 创建数据表时默认的文字编码 */
-    define('DB_CHARSET', 'utf8mb4');
+    define('DB_CHARSET', 'utf8');
     
     /** 数据库整理类型。如不确定请勿更改 */
     define('DB_COLLATE', '');
@@ -94,3 +94,9 @@
     
     /** 设置WordPress变量和包含文件。 */
     require_once(ABSPATH . 'wp-settings.php');
+    
+    define("FS_METHOD","direct");
+
+    define("FS_CHMOD_DIR", 0777);
+
+    define("FS_CHMOD_FILE", 0777);
